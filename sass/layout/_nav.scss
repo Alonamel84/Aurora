@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.nav-item {
+  margin-right: 31px;
+  text-transform: uppercase;
+}
+.nav-item:last-child {
+  margin-right: 0px;
+}
