@@ -3,52 +3,167 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 1.5;
-  //   text-align: center;
+  margin: 0 auto;
 }
-.header-locations {
+.header-stores {
   font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 10px;
   line-height: 1.5;
-  margin-left: 562px;
+  width: 66px;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-stores:focus,
+.header-stores:hover {
+  transition: color;
+  color: orange;
 }
 
 .header-location {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--secondary-bg-color);
-  padding-top: 5px;
-  padding-bottom: 4px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-bg-color);
+    padding-top: 5px;
+    padding-bottom: 4px;
+  }
 }
+
 .header-logo {
   font-weight: 700;
   font-size: 38px;
   line-height: 1.5;
   letter-spacing: 0.95px;
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .header-main {
-  margin-top: 24px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+  }
 }
 .header-registr {
   display: flex;
+  align-items: center;
 }
 .header-search {
-  width: 584px;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  border: none;
-  background-color: var(--secondary-bg-color);
-  font-size: 11px;
-  font-weight: 500;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    width: 520px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border: none;
+    font-size: 11px;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+  }
 }
 .header-registr-nav {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  font-family: var(--primary-font-family);
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: var(--primary-font-family);
+    color: white;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.header-registr-nav:hover,
+.header-registr-nav:focus {
+  color: black;
+}
+.attribute::before {
+  content: '|';
+  margin-left: 3px;
+}
+.header-search-btn {
+  display: inline-block;
+  width: 48px;
+  height: 38px;
+  border: 0;
+  background-image: url(https://img.icons8.com/search);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #e7dfdf;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+  background-color: #f7f7f7;
+  position: absolute;
+  // top: 50px;
+  width: 42px;
+  height: 43px;
+  border: none;
+}
+.SearchForm-button-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+  fill: white;
+}
+.header-search-form {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    width: 100%;
+    max-width: 584px;
+    opacity: 24%;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+.header-block {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.header-loc-block {
+  display: flex;
+  align-items: center;
+}
+.header-loc-icon {
+  width: 8px;
+  height: 11px;
+  margin-right: 6px;
+}
+.header-basket {
+  width: 16px;
+  height: 24px;
+  margin-left: 16px;
+}
+.signIn {
+  margin-right: 3px;
+}
+.header-burger {
+  width: 20px;
+  height: 15px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header-burger:focus,
+.header-burger:hover {
+  background-color: orange;
 }
