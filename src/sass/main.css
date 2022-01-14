@@ -373,6 +373,21 @@ a {
   }
 }
 
+.main-section .active {
+  background-image: url("/images/bgImage2.jpg");
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-section .active {
+    background-position: 60% 0%;
+  }
+}
+
 .main-signUp {
   margin-top: 14px;
   margin-bottom: 32px;

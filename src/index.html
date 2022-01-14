@@ -16,7 +16,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./sass/main.scss">
     <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
@@ -34,8 +34,8 @@
             </div>
     </section>
 
-    <section class="main-section">
-        <header class="header-block">
+    <section class="main-section ">
+        <header class="header-block ">
             <div class="header-main">
                 <img src="./images/burger.png" alt="location" class="header-burger">
                 <p class="header-logo">Aurora</p>
@@ -48,13 +48,10 @@
                 </form>
                 <div class="header-registr">
                     <a href="mailto:info@aurora.com" class="header-registr-nav signIn">
-                        <!-- <svg class="header-icon" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope">
-                            </use>
-                        </svg> -->
+
                         Sign In
                     </a>
-                    
+
                     <a href="mailto:info@aurora.com" class="header-registr-nav attribute">
                         Register
                     </a>
@@ -63,20 +60,19 @@
             </div>
             <nav>
                 <ul class="nav">
-                    <a href=""></a>
-                    <li class="nav-item"><a href="" class="nav-link">what’s new</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">women</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">accessories</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">kids</a></li>
-                    <li class="nav-item"> <a href="" class="nav-link">beauty</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">outlet</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">stories</a></li>
-                  </ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">what’s new</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">women</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">accessories</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">kids</a></li>
+                    <li class="nav-item"> <a href="./index.html" class="nav-link">beauty</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">outlet</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">stories</a></li>
+                </ul>
             </nav>
             </div>
         </header>
 
-        <h1 class="main-title">Hello! Welcome to Aurora</h1>
+        <h1 class="main-title active">Hello! Welcome to Aurora</h1>
 
     </section>
     <main>
@@ -85,9 +81,8 @@
                 <p class="main-title-signUp">New arrivals. Exclusive previews. First access to sales. Sign up to stay in
                     the know.</p>
                 <form class="main-signUp">
-                    <input class="main-signUp-input" type="text" name="search clothes"
-                        placeholder="Your email address" />
-                    <button class="main-signUp-btn" type="submit">register</button>
+                    <input class="main-signUp-input" type="email" name="email" placeholder="Your email address" />
+                    <button class="main-signUp-btn" type="button"  >register</button>
                 </form>
             </div>
         </section>
@@ -97,20 +92,22 @@
             <div class="footer-points">
                 <h2 class="footer-title">About Us</h2>
                 <a href="./index.html"><img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"></a>
-                <!-- <img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"> -->
+
                 <ul class="footer-features">
-                    <li class="list footer-list" > 
-                    <a href="index.html" class="footer-list">Who we are</a></li>
                     <li class="list footer-list" >
-                        <a href="index.html" class="footer-list">Our stores</a></li>
-                        </li>
+                        <a href="index.html" class="footer-list">Who we are</a>
+                    </li>
+                    <li class="list footer-list" >
+                        <a href="index.html" class="footer-list">Our stores</a>
+                    </li>
+                    </li>
                     <li class="list footer-list"><a href="index.html" class="footer-list">Customer Reviews</a></li>
                 </ul>
             </div>
             <div class="footer-points">
                 <h2 class="footer-title">Categories</h2>
                 <a href="./index.html"><img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"></a>
-                <!-- <img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"> -->
+
                 <ul class="footer-features">
                     <li class="list footer-list"><a href="index.html" class="footer-list">Women fashion</a></li>
                     <li class="list footer-list"><a href="index.html" class="footer-list">Accessories</a></li>
@@ -120,7 +117,7 @@
             <div class="footer-points">
                 <h2 class="footer-title">Help</h2>
                 <a href="./index.html"><img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"></a>
-                <!-- <img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"> -->
+
                 <ul class="footer-features">
                     <li class="list footer-list"><a href="index.html" class="footer-list">Customer service</a></li>
                     <li class="list footer-list"><a href="index.html" class="footer-list">Size guide</a></li>
@@ -130,7 +127,7 @@
             <div class="footer-points">
                 <h2 class="footer-title">Payments & Delivery</h2>
                 <a href="./index.html"><img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"></a>
-                <!-- <img src="./images/arrow.png" alt="arrow" class="header-mobile-arrow"> -->
+
                 <ul class="footer-features">
                     <li class="list footer-list"><a href="index.html" class="footer-list">Purchase terms</a></li>
                     <li class="list footer-list"><a href="index.html" class="footer-list">Guarantee</a></li>
@@ -138,7 +135,7 @@
             </div>
             <div class="footer-points-social">
                 <h2 class=" social">Social</h2>
-                
+
                 <ul class="footer-socail-links">
                     <li class="list ">
                         <a href="https://www.instagram.com/" class="social-item" rel="noopener norefferer">
@@ -188,6 +185,9 @@
         </section>
         <p class="footer-copyright">© Copyright, Aurora 2020. All Rights reserved.</p>
     </footer>
+    <script src="/js/registerEmail.js" type='module'></script>
+    <script src="/js/bgImage.js"></script>
+
 </body>
 
 </html>
