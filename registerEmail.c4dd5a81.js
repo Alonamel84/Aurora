@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"NhSe":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const n=document.querySelector(".main-signUp"),a=n.addEventListener("input",(0,e.default)(e=>{const{email:t}=n.elements,a={email:t.value};localStorage.setItem("main-signUp-email",JSON.stringify(a))},500)),l=document.querySelector("input"),r=localStorage.getItem("main-signUp-email"),i=JSON.parse(r);function u(){if(!r)return!1;l.value=i.email}u();const o=document.querySelector(".main-signUp-btn"),s=n.addEventListener("submit",e=>{e.preventDefault();const{email:t}=e.currentTarget.elements;t.value;""!==t.value&&(localStorage.clear(),n.reset())});
 },{"lodash.throttle":"FNyO"}]},{},["NhSe"], null)
-//# sourceMappingURL=/parcel-project-template/registerEmail.c4dd5a81.js.map
+//# sourceMappingURL=/Aurora/registerEmail.c4dd5a81.js.map
